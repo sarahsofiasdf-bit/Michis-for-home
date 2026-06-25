@@ -1,0 +1,149 @@
+.solicitud-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.solicitud-card__img {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.solicitud-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.solicitud-card__info {
+  flex: 1;
+}
+
+.solicitud-card__info h3 {
+  margin-bottom: 8px;
+}
+
+.solicitud-card__info p {
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+.solicitud-card__estado {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.solicitud-card__estado--pendiente {
+  background-color: var(--beige);
+  color: var(--text-dark);
+}
+
+.solicitud-card__estado--aprobada {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.solicitud-card__estado--rechazada {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.solicitud-card__acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn-aceptar {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-rechazar {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-aceptar, .btn-rechazar {
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-aceptar:hover, .btn-rechazar:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .solicitud-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .solicitud-card__acciones {
+    justify-content: center;
+  }
+}
+
+dialog.modal {
+  border: none;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+dialog.modal::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+.modal__content h3 {
+  margin-bottom: 8px;
+}
+
+.modal__content p {
+  margin-bottom: 16px;
+}
+
+.modal__content textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--beige);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.modal__acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn--secondary {
+  background-color: var(--text);
+  color: white;
+}

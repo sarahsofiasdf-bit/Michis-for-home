@@ -1,0 +1,18 @@
+/* =========================================
+   ADOPTADOS - Estilos específicos
+   ========================================= */
+
+.page-intro p {
+  max-width: 600px;
+  margin: 12px auto 0;
+}
+
+.adopted-date {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+main.container {
+  padding-bottom: 60px;
+}

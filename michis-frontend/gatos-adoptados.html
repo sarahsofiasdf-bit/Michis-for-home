@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michis for Home | Gatos adoptados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/gatitos.css" />
+  <link rel="stylesheet" href="css/adoptados.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.png" alt="Logo Michis for Home" />
+      </a>
+      <button class="navbar__toggle" aria-label="Menú">☰</button>
+      <nav class="navbar__menu" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <span class="divider">|</span>
+        <a href="quienes-somos.html">¿Quiénes somos?</a>
+        <span class="divider">|</span>
+        <a href="gatitos.html">Ver gatitos</a>
+        <span class="divider">|</span>
+        <a href="dar-en-adopcion.html">Dar en adopción</a>
+        <span class="divider">|</span>
+        <a href="gatos-adoptados.html" aria-current="page">Adoptados</a>
+        <span class="divider">|</span>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== TÍTULO ===== -->
+  <section class="page-intro container text-center">
+    <h1>Nuestro muro de la fama 🏆</h1>
+    <p>Estos michis ya encontraron su hogar para siempre, ¡gracias a personas como tú!</p>
+  </section>
+
+  <!-- ===== GRID DE ADOPTADOS ===== -->
+  <main class="container">
+    <div id="adoptados-grid" class="gatitos-grid">
+      <!-- Las tarjetas se generan dinámicamente con app.js -->
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bar">
+        <div class="footer__contact">
+          <span>🐾</span>
+          <span>Michisforhome23@gmail.com</span>
+          <span>|</span>
+          <span>314 5678907</span>
+        </div>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

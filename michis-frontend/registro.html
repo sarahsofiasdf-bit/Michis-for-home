@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michis for Home | Crear cuenta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/formularios.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.png" alt="Logo Michis for Home" />
+      </a>
+      <button class="navbar__toggle" aria-label="Menú">☰</button>
+      <nav class="navbar__menu" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <span class="divider">|</span>
+        <a href="quienes-somos.html">¿Quiénes somos?</a>
+        <span class="divider">|</span>
+        <a href="gatitos.html">Ver gatitos</a>
+        <span class="divider">|</span>
+        <a href="dar-en-adopcion.html">Dar en adopción</a>
+        <span class="divider">|</span>
+        <a href="gatos-adoptados.html">Adoptados</a>
+        <span class="divider">|</span>
+        <a href="login.html" aria-current="page">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <h1 class="text-center page-title-simple">Crear cuenta</h1>
+
+  <main class="container">
+    <div class="form-card">
+      <img class="form-card__logo" src="images/logo.png" alt="Logo Michis for Home" />
+      <h2 class="form-card__title text-center">Registrarse</h2>
+
+      <div class="form-card__inner">
+        <form id="form-registro">
+          <div class="form-group">
+            <label for="registro-nombre">Nombre completo</label>
+            <input type="text" id="registro-nombre" name="nombre" required />
+          </div>
+
+          <div class="form-group">
+            <label for="registro-correo">Correo</label>
+            <input type="email" id="registro-correo" name="correo" required />
+          </div>
+
+          <div class="form-group">
+            <label for="registro-telefono">Teléfono</label>
+            <input type="tel" id="registro-telefono" name="telefono" required />
+          </div>
+
+          <div class="form-group">
+            <label for="registro-password">Contraseña</label>
+            <input type="password" id="registro-password" name="password" required />
+          </div>
+
+          <div class="form-group">
+            <label for="registro-confirm-password">Confirmar contraseña</label>
+            <input type="password" id="registro-confirm-password" name="confirmPassword" required />
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn">Registrarse</button>
+          </div>
+
+          <p class="form-card__footnote">
+            ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bar">
+        <div class="footer__contact">
+          <span>🐾</span>
+          <span>Michisforhome23@gmail.com</span>
+          <span>|</span>
+          <span>314 5678907</span>
+        </div>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

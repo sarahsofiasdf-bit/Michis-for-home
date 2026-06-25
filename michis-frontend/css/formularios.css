@@ -1,0 +1,48 @@
+/* =========================================
+   FORMULARIOS - Estilos compartidos
+   (adopción, dar en adopción, login, registro)
+   ========================================= */
+
+.page-title-simple {
+  padding: 40px 0;
+}
+
+main.container {
+  padding-bottom: 60px;
+}
+
+.form-card__notice {
+  background-color: var(--lila);
+  color: var(--text-dark);
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-card .btn {
+  margin-top: 8px;
+}
+
+.dar-adopcion__intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+}
+
+/* ---------- Página de login/registro: fotos decorativas ---------- */
+.auth-photo {
+  margin: 0 auto 40px;
+}
+
+.auth-photo--bottom {
+  margin: 40px auto 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .page-title-simple {
+    padding: 24px 0;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michis for Home | Formulario de adopción</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/formularios.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.png" alt="Logo Michis for Home" />
+      </a>
+      <button class="navbar__toggle" aria-label="Menú">☰</button>
+      <nav class="navbar__menu" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <span class="divider">|</span>
+        <a href="quienes-somos.html">¿Quiénes somos?</a>
+        <span class="divider">|</span>
+        <a href="gatitos.html" aria-current="page">Ver gatitos</a>
+        <span class="divider">|</span>
+        <a href="dar-en-adopcion.html">Dar en adopción</a>
+        <span class="divider">|</span>
+        <a href="gatos-adoptados.html">Adoptados</a>
+        <span class="divider">|</span>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <h1 class="text-center page-title-simple">Formulario de adopción</h1>
+
+  <main class="container">
+    <div class="form-card">
+      <img class="form-card__logo" src="images/logo.png" alt="Logo Michis for Home" />
+
+      <div class="form-card__inner">
+        <p id="adopcion-gato-nombre" class="form-card__notice" hidden></p>
+
+        <form id="form-adopcion">
+          <div class="form-group">
+            <label for="adopcion-motivo">Motivo de adopción</label>
+            <textarea id="adopcion-motivo" name="motivo" required></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn">Enviar solicitud</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bar">
+        <div class="footer__contact">
+          <span>🐾</span>
+          <span>Michisforhome23@gmail.com</span>
+          <span>|</span>
+          <span>314 5678907</span>
+        </div>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* =========================================
+   QUIENES SOMOS - Estilos específicos
+   ========================================= */
+
+/* ---------- Título de página con fondo curvo ---------- */
+.page-title {
+  position: relative;
+  padding: 60px 0 80px;
+  overflow: hidden;
+}
+
+.page-title__bg {
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 220px;
+  background-color: var(--beige);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.page-title h1 {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* ---------- Bloques de contenido ---------- */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 60px;
+}
+
+.about__block {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  border-radius: var(--radius-lg);
+  padding: 48px;
+}
+
+.about__block--reverse {
+  flex-direction: row-reverse;
+}
+
+.about__block--lila { background-color: var(--lila); }
+.about__block--azul { background-color: var(--azul); }
+.about__block--beige { background-color: var(--beige); }
+
+.about__image {
+  flex: 0 0 280px;
+}
+
+.about__image img {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.about__text {
+  flex: 1;
+}
+
+.about__text h2,
+.about__block--full h2 {
+  margin-bottom: 16px;
+}
+
+/* Bloque completo (Nuestra historia) */
+.about__block--full {
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about__paw {
+  font-size: 2.5rem;
+  opacity: 0.4;
+  margin-bottom: 8px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .about__block,
+  .about__block--reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .about__image {
+    flex: 0 0 auto;
+    width: 220px;
+  }
+
+  .about__block--full {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .about__block {
+    padding: 32px 24px;
+  }
+
+  .page-title__bg {
+    height: 160px;
+  }
+}
