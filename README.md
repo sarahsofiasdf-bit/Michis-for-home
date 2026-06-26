@@ -1,5 +1,7 @@
 # Michis for Home
 
+Por: Sarah Castillo Giraldo Guzman 
+
 Proyecto académico — API REST + Frontend.
 Backend: **Node.js + Express + MySQL 8.4.9**
 
